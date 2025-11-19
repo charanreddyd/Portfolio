@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Charan - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="logo">CHARAN<span>.</span></div>
+        <div class="nav-icons">
+            <a href="#home" title="Home"><i class="fas fa-home"></i></a>
+            <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="admin-toggle" id="adminToggle" title="Admin Panel">
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <h3>Admin Panel</h3>
+            <button class="close-admin" id="closeAdmin"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="admin-content">
+            <h4>Manage Reviews</h4>
+            <div class="admin-reviews" id="adminReviews">
+                <!-- Reviews will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h1 class="animate-title">HELLO, I'M CHARAN</h1>
+            <p class="animate-fade-in">A student passionate about learning, creating, and growing. This space is where curiosity meets creativity, and every idea is a step toward something greater. I'm still exploring, experimenting, and building my path — one project at a time. Thank you for visiting and being part of this journey.</p>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2 class="animate-slide-left"><i class="fas fa-user"></i> About Me</h2>
+            <p class="animate-slide-right">I'm <span class="highlight">Charan</span>, a student at <span class="highlight">Neil Gogte Institute of Technology</span>. I'm passionate about learning, creating, and exploring new opportunities, and I'm currently looking for internships to gain real-world experience and grow my skills.</p>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h2 class="animate-slide-left"><i class="fas fa-code"></i> Skills</h2>
+            <p class="skills-intro animate-fade-in">I have a growing skill set in both front-end and programming languages, including:</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.1s">
+                    <i class="fab fa-html5 skill-icon html-color"></i>
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.2s">
+                    <i class="fab fa-css3-alt skill-icon css-color"></i>
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.3s">
+                    <i class="fab fa-js-square skill-icon js-color"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.4s">
+                    <i class="fas fa-copyright skill-icon c-color"></i>
+                    <div class="skill-name">C Programming</div>
+                </div>
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.5s">
+                    <i class="fab fa-python skill-icon python-color"></i>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-item animate-bounce-in" style="animation-delay: 0.6s">
+                    <i class="fab fa-java skill-icon java-color"></i>
+                    <div class="skill-name">Java</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2 class="animate-slide-left"><i class="fas fa-project-diagram"></i> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" style="animation-delay: 0.1s">
+                    <div class="project-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Portfolio</h3>
+                        <p class="project-description">A responsive portfolio website with interactive elements and animations.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" style="animation-delay: 0.3s">
+                    <div class="project-image">
+                        <i class="fas fa-hand-rock"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Rock Paper Scissors</h3>
+                        <p class="project-description">A classic game with a modern UI and score tracking.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" style="animation-delay: 0.5s">
+                    <div class="project-image">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Flappy Bird Clone</h3>
+                        <p class="project-description">A fun and challenging game with smooth controls and increasing difficulty.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2 class="animate-slide-left"><i class="fas fa-address-book"></i> Contact Me</h2>
+            <div class="contact-grid">
+                <a href="https://www.instagram.com/chaaranreddy?igsh=MTV5c2VuaWlhYmF4dQ==" target="_blank" class="contact-item animate-float" style="animation-delay: 0.1s">
+                    <i class="fab fa-instagram contact-icon instagram-color"></i>
+                    <div class="contact-name">Instagram</div>
+                </a>
+                <a href="https://github.com/charanreddyd" target="_blank" class="contact-item animate-float" style="animation-delay: 0.2s">
+                    <i class="fab fa-github contact-icon github-color"></i>
+                    <div class="contact-name">GitHub</div>
+                </a>
+                <a href="https://www.linkedin.com/in/sri-charan-reddy-donthi-reddy-6a123a31a/" target="_blank" class="contact-item animate-float" style="animation-delay: 0.3s">
+                    <i class="fab fa-linkedin contact-icon linkedin-color"></i>
+                    <div class="contact-name">LinkedIn</div>
+                </a>
+                <a href="mailto:dothireddycharanreddy82@gmail.com" class="contact-item animate-float" style="animation-delay: 0.4s">
+                    <i class="fas fa-envelope contact-icon email-color"></i>
+                    <div class="contact-name">Email</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <h2 class="animate-slide-left"><i class="fas fa-star"></i> Rate My Website</h2>
+            <div class="rating-container">
+                <div class="rating-title">How would you rate my portfolio?</div>
+                <div class="stars" id="stars">
+                    <span class="star" data-rating="1">★</span>
+                    <span class="star" data-rating="2">★</span>
+                    <span class="star" data-rating="3">★</span>
+                    <span class="star" data-rating="4">★</span>
+                    <span class="star" data-rating="5">★</span>
+                </div>
+                <div class="rating-form">
+                    <input type="text" id="reviewerName" placeholder="Your name *" class="name-input" required>
+                    <textarea id="reviewComment" placeholder="Your comment (optional)" class="comment-input"></textarea>
+                    <button class="submit-rating" id="submitRating">Submit Rating</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Interactive Robot Guide -->
+    <div class="mini-robot-container">
+        <div class="mini-speech-bubble" id="miniSpeechBubble">Hi! I'm Robo! Click me for guidance! 👋</div>
+        <div class="mini-robot" id="miniRobot">
+            <div class="mini-antenna">
+                <div class="mini-antenna-top"></div>
+            </div>
+            <div class="mini-screen">
+                <div class="mini-eyes">
+                    <div class="mini-eye left-eye">
+                        <div class="mini-pupil"></div>
+                    </div>
+                    <div class="mini-eye right-eye">
+                        <div class="mini-pupil"></div>
+                    </div>
+                </div>
+                <div class="mini-mouth-container">
+                    <div class="mini-mouth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Charan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- FIREBASE (module) - make sure this block is BEFORE script.js -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+      import { getFirestore, collection, addDoc, getDocs, deleteDoc, doc } 
+        from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+      // <<< YOUR firebaseConfig (you already created this in Firebase web app) >>>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAkurb5cHwFabnO7IiF8tIITbwW1M_Xsew",
+        authDomain: "charan-portfolio-b8c63.firebaseapp.com",
+        projectId: "charan-portfolio-b8c63",
+        storageBucket: "charan-portfolio-b8c63.firebasestorage.app",
+        messagingSenderId: "324296151114",
+        appId: "1:324296151114:web:f4d8f2fe77720269e4d6b3",
+        measurementId: "G-DRZ519XQXG"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      // Expose helper functions to non-module script (script.js)
+      window.addReviewToDB = async (review) => {
+        // review should be a plain object
+        await addDoc(collection(db, "reviews"), review);
+      };
+
+      window.getAllReviews = async () => {
+        const snapshot = await getDocs(collection(db, "reviews"));
+        // return array of { id, ...data }
+        return snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+      };
+
+      window.deleteReviewFromDB = async (id) => {
+        if (!id) return;
+        await deleteDoc(doc(db, "reviews", id));
+      };
+    </script>
+
+    <!-- Your main script file (non-module) -->
+    <script src="script.js"></script>
+</body>
+</html>
